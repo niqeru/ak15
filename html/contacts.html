@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Автоколонна 2015</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('.refresh');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    if (this.href !== window.location.href) {
+                        e.preventDefault();
+                        document.body.classList.add('fade-out');
+                        setTimeout(() => {
+                            window.location.href = this.href;
+                        }, 500);
+                    }
+                });
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <h1>АВТОколонна 2015</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="refresh">О Компании</a></li>
+                    <li><a href="vakansii.html" class="refresh">Вакансии</a></li>
+                    <li><a href="contacts.html" class="active-link" class="refresh">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="../index.html" class="refresh"><img src="../images/logo.png" alt="заглушка логотипа" class="logo"></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="maindiv">
+            <section id="advertising" class="section">
+                <div class="image-adv" id="imgadv3">
+                        <a href="#down"><div class="text-adv" id="txtadv3">
+                            <h3>Связь с нами</h3>
+                            <p>Мы ждем вашего звонка!</p>
+                        </div></a>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2>Контакты</h2>
+                    <p>Свяжитесь с нами через любой из наших отделов:</p>
+                    <br>
+
+                    <div class="contact-listing">
+                        <div>
+                            <h3>Отдел кадров</h3>
+                            <br>
+                            <p><strong>Телефон:</strong><br><a style="color: rgb(5, 5, 5);">●</a> +7 (905) 909-57-13 <br><a style="color: rgb(5, 5, 5);">●</a> +7 (3843) 99-31-21</p>
+                            <br>
+                            <p><strong>Email:</strong> kadry.ak2015@yandex.ru</p>
+                            <br>
+                            <p><strong>Адрес:</strong> г. Новокузнецк, ул. Павловского, д. 23</p>
+                        </div>
+                        <div class="contact-icon2">
+                            <a><img src="../images/call.png" alt="Контакты"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-listing">
+                        <div>
+                            <h3>Приемная</h3>
+                            <br>
+                            <p><strong>Телефон:</strong><br><a style="color: rgb(5, 5, 5);">●</a> +7 (905) 909-57-02 <br><a style="color: rgb(5, 5, 5);">●</a> +7 (3843) 99-31-19</p>
+                            <br>
+                            <p><strong>Email:</strong>  office@ak2015.ru</p>
+                            <br>
+                            <p><strong>Адрес:</strong> г. Новокузнецк, ул. Павловского, д. 23</p>
+                        </div>
+                        <div class="contact-icon2">
+                            <a><img src="../images/call.png" alt="Контакты"></a>
+                        </div>
+                    </div>
+
+                    <a id="down"></a>
+
+                    <div class="contact-listing">
+                        <div>
+                            <h3>Отдел материально-технического снабжения</h3>
+                            <br>
+                            <p><strong>Телефон:</strong> +7 (906) 934-19-12</p>
+                            <p><strong>Email:</strong> chernikov_iv@ak2015.ru</p>
+                            <p><strong>Адрес:</strong> г. Новокузнецк, ул. Щорса д. 13</p>
+                        </div>
+                        <div class="contact-icon2">
+                            <a><img src="../images/call.png" alt="Контакты"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-listing">
+                        <div>
+                            <h3>Отдел эксплуатации</h3>
+                            <br>
+                            <p><strong>Телефон:</strong> +7 (905) 909-57-26</p>
+                            <p><strong>Email:</strong> dmitriidereshev@mail.ru</p>
+                            <p><strong>Адрес:</strong> Новокузнецкий муниципальный район, пос. Недорезово</p>
+                        </div>
+                        <div class="contact-icon2">
+                            <a><img src="../images/call.png" alt="Контакты"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-listing">
+                        <div>
+                            <h3>Бухгалтерия</h3>
+                            <br>
+                            <p><strong>Телефон:</strong> +7 (913) 307-73-10</p>
+                            <p><strong>Email:</strong> 3216@ak2015.ru</p>
+                            <p><strong>Адрес:</strong> г. Новокузнецк, ул. Павловского, д. 23</p>
+                        </div>
+                        <div class="contact-icon2">
+                            <a><img src="../images/call.png" alt="Контакты"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 "Автоколонна 2015". Все права защищены.</p>
+        </div>
+    </footer>
+  <script src="js/agnez.js"></script>
+  </body>
+</html>
