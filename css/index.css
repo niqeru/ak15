@@ -466,5 +466,9 @@ footer {
     .growth-table th, .growth-table td {
         font-size: 25px;
     }
+
+    .big_txt{
+        font-size: 25px;
+    }
     
 }
