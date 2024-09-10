@@ -105,6 +105,10 @@ nav ul li a:hover {
     height: 85px;
 }
 
+.big_txt{
+	font-size:20px;
+}
+
 .image-adv{
     background-color:   #645d5d2b;
     background-repeat: no-repeat;
@@ -466,7 +470,7 @@ footer {
     }
 
     .big_txt{
-        font-size: 25px;
+        font-size: 30px;
     }
     
 }
