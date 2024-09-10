@@ -243,7 +243,6 @@ footer {
 
 .about-text p{
     font-size: 18px;
-    transition: 1s all;
 }
 
 #toggle-button, #back-button{
@@ -253,7 +252,6 @@ footer {
 
 .off{
     display: none;
-    transition: 1s all;
 }
 
 .hr-washed {
